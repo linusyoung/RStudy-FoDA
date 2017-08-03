@@ -1,4 +1,4 @@
 # RStudy-FoDA
 R scripts for edX course FoDA
 
-This is used to close issue defunkt/#1
+This is used to close issue #1
