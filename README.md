@@ -1,5 +1,6 @@
 # RStudy-FoDA
 R scripts for edX course FoDA
 
+Using R Studio to learn R scripts for FoDA courses
 
-This is used to close issue #1
+Scripts list:
