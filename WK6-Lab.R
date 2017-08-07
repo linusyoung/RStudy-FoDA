@@ -59,3 +59,4 @@ logisticFitPred(year1995,brazil1995$mobile.users,30)/1000000
 
 #Question 4
 2000/(1+152.10*(1/2.17)^9)
+#another test from rstudio
