@@ -68,6 +68,7 @@ pt((80 - 74)/1.44, 25)
 
 # Question 3
 qt(0.95, 15)
+# data from the questions page is save in q3 as a csv file without title.
 q <- q3
 cp_var <- q$X2 - q$X3
 mean(cp_var)
