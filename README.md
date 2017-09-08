@@ -13,3 +13,4 @@ Using R Studio to learn R scripts for FoDA courses
 - Part2 Wk1
 - Part2 Wk2
 - Part2 Wk3
+- Part2 Wk4

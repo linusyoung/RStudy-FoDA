@@ -93,7 +93,7 @@ singer
 chisq.test(genre_twitter, correct = FALSE)$expected
 chisq.test(genre_twitter, correct = FALSE)
 
-#Question 1
+# Question 1
 acl$Recent[acl$Year < 2012] <- 0
 acl$Recent[acl$Year >= 2012] <- 1
 recent_female <- acl[acl$Gender == 'F' & acl$Recent == 1,]
@@ -103,3 +103,27 @@ gender_tab
 
 chisq.test(gender_tab, correct = FALSE)$expected
 chisq.test(gender_tab, correct = FALSE)
+
+# Question 2
+offspring <- c(152, 39, 14)
+off_exp <- c(.75, .15, .1)
+chisq.test(offspring, p = off_exp)$expected
+chisq.test(offspring, p = off_exp)
+qchisq(0.95, 2)
+
+# Question 3
+qchisq(0.95, 1)
+hand_tab <- table(hand$`	Gender`, hand$`	Dominant Hand`)
+chisq.test(hand_tab, correct = FALSE)$expected
+
+# Question 4
+area <- c(28, 42, 53)
+access <- c(13, 35, 50)
+no_access <- area - access
+sum(access)/sum(area)
+1 - sum(access)/sum(area)
+survey_tab <- matrix(c(access, no_access),3)
+colnames(survey_tab) <- c('access', 'no access')
+rownames(survey_tab) <- c('rural', 'suburban', 'urban')
+chisq.test(survey_tab, correct = FALSE)$expected
+chisq.test(survey_tab, correct = FALSE)
