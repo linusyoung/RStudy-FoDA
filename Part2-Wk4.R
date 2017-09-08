@@ -93,4 +93,13 @@ singer
 chisq.test(genre_twitter, correct = FALSE)$expected
 chisq.test(genre_twitter, correct = FALSE)
 
-#
+#Question 1
+acl$Recent[acl$Year < 2012] <- 0
+acl$Recent[acl$Year >= 2012] <- 1
+recent_female <- acl[acl$Gender == 'F' & acl$Recent == 1,]
+
+gender_tab <- table(acl$Gender, acl$Recent)
+gender_tab
+
+chisq.test(gender_tab, correct = FALSE)$expected
+chisq.test(gender_tab, correct = FALSE)
